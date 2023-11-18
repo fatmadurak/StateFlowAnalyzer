@@ -1,0 +1,47 @@
+.header-container{
+
+    padding: 1.4rem 25rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(148, 97, 184);
+
+  
+}
+
+.logo{
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.header-wrapper{
+
+ display: flex;
+ justify-content: space-between;
+ width: 35%;
+ gap: 1rem;
+
+}
+
+input,select{
+
+
+ padding: .1rem 1rem;
+ outline: none;
+ border-radius: .5rem;
+ font-size: 1.2rem;
+ border: 1px solid rgb(117, 110, 110);
+}
+
+button{
+
+    background-color:   rgb(139, 189, 161);
+ 
+    border: none;
+    padding: .5rem .5rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    font-weight:500;
+    text-wrap: nowrap;
+    
+}
