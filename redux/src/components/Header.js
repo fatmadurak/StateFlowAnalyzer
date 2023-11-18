@@ -1,6 +1,12 @@
 import React from 'react'
 import "../assets/styles/Header.css"
+import { useDispatch } from 'react-redux'
+import { modalFunc } from '../redux-store/ModalSlice'
 const Header = () => {
+
+  const dispatch=useDispatch();
+
+
   return (
    <>
    <div className='header-container'>
@@ -19,9 +25,9 @@ const Header = () => {
    
 
    
-        <input type="" name="" value="" placeholder='Arama Yapınız:'/>
+        <input  placeholder='Arama Yapınız:'/>
       
-     <button type="">Modal Ekle</button>
+     <button onClick={()=>dispatch(modalFunc())} type="">Modal Ekle</button>
    
      </div>
 
