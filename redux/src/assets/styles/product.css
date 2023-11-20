@@ -1,0 +1,40 @@
+
+.products{
+
+margin: 5rem;
+display: flex;
+justify-content:center;
+gap: 1rem;
+flex-wrap: wrap;
+
+}
+
+
+
+.img{
+
+    position: relative;
+}
+
+.info{
+
+position: absolute;
+bottom: 0;
+right: 0;
+left: 0;
+background-color: green;
+text-align: center;
+padding-top: 1px;
+display: flex;
+justify-content:space-around;
+
+
+}
+
+.name,.price{
+
+    font-size: 1rem;
+    font-weight: bold;
+    color:rgb(17, 17, 126);
+}
+
