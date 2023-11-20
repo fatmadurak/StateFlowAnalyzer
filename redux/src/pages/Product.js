@@ -1,21 +1,34 @@
 import React from 'react'
 import ProductCard from '../components/ProductCard'
-import { useSelector } from 'react-redux'
+import {  useSelector } from 'react-redux'
 import Modal from '../components/Modal';
+import "../assets/styles/product.css"
 function Product() {
 
   const {modal}=useSelector(state=>state.modal);
-  console.log(modal)
+  const {data}=useSelector(state=>state.data)
+
 
   return (
    
     <>
     
-    <ProductCard/>
+     <div className='products'>
+      {
+
+         data?.map((dat,i)=>(
+
+          <ProductCard key={i} dat={dat}/>
+
+         ))
+
+
+      }
+     </div>
 
     {
 
-      modal && <Modal/>
+      modal && <Modal title={"ÜRÜN OLUŞTUR"} btnText={"Oluştur"} />
     }
      
     </>
