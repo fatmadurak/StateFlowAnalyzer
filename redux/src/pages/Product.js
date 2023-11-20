@@ -7,6 +7,14 @@ function Product() {
   const {modal}=useSelector(state=>state.modal);
   console.log(modal)
 
+
+  const buttonFunc=()=>{
+
+
+
+
+  }
+
   return (
    
     <>
@@ -15,7 +23,7 @@ function Product() {
 
     {
 
-      modal && <Modal/>
+      modal && <Modal title={"ÜRÜN OLUŞTUR"} btnText={"Oluştur"} btnFunc={buttonFunc}/>
     }
      
     </>

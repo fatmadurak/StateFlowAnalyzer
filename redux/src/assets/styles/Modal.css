@@ -13,11 +13,45 @@
 }
 
 .modal-wrapper{
-
-    width: 30%;
+    position: relative;
+    width: 50%;
+    height: 50vh;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: .5rem;
 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   
 }
+
+.close{
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+
+}
+
+
+.input {
+    height: 40px; 
+    width: 80%;
+    border: 1px solid gray; 
+    border-radius: 5px; 
+    padding: 0.5rem; 
+    outline: none;
+    margin: 1.5rem 1rem;
+    font-size: 16px; 
+  }
+  
+ 
+  .input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5); 
+  }
+  
